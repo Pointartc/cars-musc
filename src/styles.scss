@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #141414;
+  color: #ffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-justify-content-around {
+  justify-content: space-around;
+}
+
+.flex-justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.main-button {
+  position: relative;
+  margin: 40px  auto  103px;
+  padding: 19px 22px;
+  transition: all .2s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    //border-radius: 28px;
+    background: rgba(#DB3138, .5);
+    width: 140px;
+    height: 56px;
+    transition: all .3s ease;
+  }
+
+  button {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+      background: rgba(#DB3138, 1);
+    }
+
+    &:active {
+      transform: scale(.96);
+    }
+  }
+}
+
+::ng-deep {
+  .mat-button-focus-overlay {
+    display: none;
+  }
+}
