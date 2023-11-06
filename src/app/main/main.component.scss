@@ -6,14 +6,6 @@
   background-size: cover;
 }
 
-.diamond {
-  width: 10px;
-  height: 10px;
-  background-color: #DB3138;
-  margin: 15px;
-  rotate: 45deg;
-  cursor: pointer;
-}
 
 .logo {
   font-size: 150px;
@@ -48,5 +40,64 @@
 .info-box {
   width: 640px;
   border: #898989 1px solid;
+}
 
+.about__achievements {
+  max-width: 600px;
+}
+
+.grid__table {
+  display: grid;
+  grid-template-columns: 0fr repeat(2, 0.5fr) 0fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 3;
+
+  border: 2px #fff solid;
+}
+
+.div2 {
+  grid-area: 2 / 2 / 3 / 3;
+
+  border: 2px #fff solid;
+}
+
+.div3 {
+  grid-area: 3 / 2 / 4 / 3;
+
+  border: 2px #fff solid;
+}
+
+.div4 {
+  grid-area: 4 / 2 / 5 / 3;
+
+  border: 2px #fff solid;
+}
+
+.div5 {
+  grid-area: 2 / 3 / 3 / 4;
+
+  border: 2px #fff solid;
+}
+
+.div6 {
+  grid-area: 3 / 3 / 4 / 4;
+
+  border: 2px #fff solid;
+}
+
+.div7 {
+  grid-area: 4 / 3 / 5 / 4;
+
+  border: 2px #fff solid;
+}
+
+.div8 {
+  grid-area: 5 / 3 / 6 / 4;
+
+  border: 2px #fff solid;
 }
