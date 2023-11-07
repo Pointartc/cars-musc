@@ -5,7 +5,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 
 .flex {
@@ -90,6 +90,6 @@ body {
 
 ::ng-deep {
   .mat-button-focus-overlay {
-    display: none;
+    //display: none;
   }
 }
