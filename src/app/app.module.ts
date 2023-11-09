@@ -11,6 +11,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatRippleModule} from "@angular/material/core";
 import { DiamodComponent } from './share/components/diamod/diamod.component';
 import { CarouselComponent } from './share/components/carousel/carousel.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { CarouselComponent } from './share/components/carousel/carousel.componen
         BrowserAnimationsModule,
         MatButtonModule,
         MatIconModule,
-        MatRippleModule
+        MatRippleModule,
+        CarouselModule
     ],
   providers: [],
   bootstrap: [AppComponent]

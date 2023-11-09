@@ -1,7 +1,5 @@
-body {
-  background: #141414;
-  color: #ffff;
-}
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 .container {
   margin: 0 auto;
@@ -44,11 +42,12 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: var(--black, #141414);
+  color: #ffff;
 }
 
 .main-button {
   position: relative;
-  margin: 40px  auto  103px;
+  margin: 40px auto 103px;
   padding: 19px 22px;
   transition: all .2s ease;
 
@@ -86,6 +85,27 @@ body {
       transform: scale(.96);
     }
   }
+}
+
+.carousel-position-buttons {
+  position: relative;
+}
+
+.owl-theme {
+  .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+  }
+}
+
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
 }
 
 ::ng-deep {
