@@ -14,7 +14,7 @@ export class CarouselComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['<===', '===>'],
+    navText: ['<div class="prev flex flex-justify-content-center flex-align-items-center"> < </div>', '<div class="next flex flex-justify-content-center flex-align-items-center"> > </div>'],
     responsive: {
       0: {
         items: 1

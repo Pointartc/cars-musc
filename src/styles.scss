@@ -95,10 +95,9 @@ body {
   .owl-nav {
     margin-top: 10px;
     text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+    //position: absolute;
+    //top: 50%;
+    //bottom: 50%;
   }
 }
 
@@ -108,8 +107,6 @@ body {
   width: 100%;
 }
 
-::ng-deep {
-  .mat-button-focus-overlay {
-    //display: none;
-  }
+.img {
+  max-width: 450px !important;
 }
