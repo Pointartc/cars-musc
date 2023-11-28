@@ -43,6 +43,22 @@
     background: #DB3138;
     width: 366px;
     height: 70px;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
   }
 
+  .xxx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-text {
+    position: fixed;
+    bottom: -10px;
+    left: 15%;
+    width: 70%;
+  }
 }
