@@ -90,46 +90,69 @@
     <app-carousel></app-carousel>
   </div>
   <div class="container flex flex-align-items-center flex-justify-content-around">
-    <div class="about__box flex flex-direction-column">
-        <div class="">
-          <div class="flex flex-align-items-center">
-            <div class="about__box_img flex"><img src="assets/checkList.svg" alt=""></div>
-            <div class="about__box_proposal">materials from the best companies</div>
-          </div>
-          <div class="about__box_content"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum
-            est, molestie proin
-            tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium</h5>
-          </div>
-        </div>
-        <div class="flex flex-justify-content-center about__box_content">
-          <app-diamod></app-diamod>
-        </div>
-        <div class="">
-          <div class="flex flex-align-items-center">
-            <div class="about__box_img "><img src="assets/atomizer.svg" alt=""></div>
-            <div class="about__box_proposal">Experienced masters</div>
-          </div>
-          <div class="about__box_content"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec
-            elementum egestas vitae
-            ullamcorper. Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget
-            blandit ornare. Molestie ipsum commodo faucibus rhoncus</h5>
-          </div>
-        </div>
-        <div class="flex flex-justify-content-center about__box_content">
-          <app-diamod></app-diamod>
-        </div>
-        <div class="">
-          <div class="flex flex-align-items-center">
-            <div class="about__box_img flex"><img src="assets/car.svg" alt=""></div>
-            <div class="about__box_proposal">Guarantee for all types of work</div>
-          </div>
-          <div class="about__box_content"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            volutpat.</h5></div>
-        </div>
+    <div class="about__box">
+      <app-info></app-info>
     </div>
-    <div class="">
-      <div class="about__box_right-image"><img src="assets/car4.png" alt=""></div>
+    <div class="carousel-about">
+      <div class="">
+        <app-carousel-about></app-carousel-about>
+      </div>
     </div>
   </div>
+  <div class="container flex flex-justify-content-center flex-align-items-center flex-direction-column">
+    <div class=""><h2>Our services</h2></div>
+    <div class="">
+      <app-diamod></app-diamod>
+    </div>
+    <div class="">
+      <div class="flex flex-justify-content-between">
+        <div class="flex main-button">
+          <button mat-button [disableRipple]="true"><span>Pasting</span></button>
+        </div>
+        <div class="flex main-button">
+          <button mat-button [disableRipple]="true"><span>Detailing</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="details-box flex flex-direction-column flex-align-items-center flex-justify-content-center">
+        <div class="about__box_img"><img src="assets/gluing.svg" alt=""></div>
+        <div class=""><h4>Protective films</h4></div>
+        <div class=""><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque
+          vulputate sit. Ut feugiat.</h6></div>
+        <div class="main-button">
+          <button mat-button [disableRipple]="true"><span>Read more</span></button>
+        </div>
+      </div>
+      <div class="details-box flex flex-direction-column flex-align-items-center flex-justify-content-center">
+        <div class="about__box_img"><img src="assets/checkList.svg" alt=""></div>
+        <div class=""><h4>Color films</h4></div>
+        <div class=""><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque
+          vulputate sit. Ut feugiat.</h6></div>
+        <div class="main-button">
+          <button mat-button [disableRipple]="true"><span>Read more</span></button>
+        </div>
+      </div>
+      <div class="details-box flex flex-direction-column flex-align-items-center flex-justify-content-center">
+        <div class="about__box_img"><img src="assets/atomizer.svg" alt=""></div>
+        <div class=""><h4>Design</h4></div>
+        <div class=""><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque
+          vulputate sit. Ut feugiat.</h6></div>
+        <div class="main-button">
+          <button mat-button [disableRipple]="true"><span>Read more</span></button>
+        </div>
+      </div>
+      <div class="details-box flex flex-direction-column flex-align-items-center flex-justify-content-center">
+        <div class="about__box_img"><img src="assets/car.svg" alt=""></div>
+        <div class=""><h4>Interior pasting</h4></div>
+        <div class=""><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque
+          vulputate sit. Ut feugiat.</h6></div>
+        <div class="main-button">
+          <button mat-button [disableRipple]="true"><span>Read more</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=""></div>
 </div>
 

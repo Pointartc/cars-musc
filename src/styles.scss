@@ -35,6 +35,10 @@ img {
   flex-direction: column;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -62,7 +66,6 @@ body {
     top: 0;
     left: 0;
     display: block;
-    //border-radius: 28px;
     background: rgba(#DB3138, .5);
     width: 140px;
     height: 56px;
@@ -100,9 +103,6 @@ body {
   .owl-nav {
     margin-top: 10px;
     text-align: center;
-    //position: absolute;
-    //top: 50%;
-    //bottom: 50%;
   }
 }
 
@@ -114,4 +114,8 @@ body {
 
 .img {
   max-width: 450px !important;
+}
+
+::ng-deep {
+
 }

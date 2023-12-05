@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
+import {first} from "rxjs";
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  selector: 'app-carousel-about',
+  templateUrl: './carousel-about.component.html',
+  styleUrls: ['./carousel-about.component.scss']
 })
-export class CarouselComponent implements OnInit {
+export class CarouselAboutComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -19,19 +20,14 @@ export class CarouselComponent implements OnInit {
       0: {
         items: 1
       },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      }
     },
     nav: true
   }
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  protected readonly first = first;
+  firstClass: any;
 }

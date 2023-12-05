@@ -12,6 +12,8 @@ import {MatRippleModule} from "@angular/material/core";
 import { DiamodComponent } from './share/components/diamod/diamod.component';
 import { CarouselComponent } from './share/components/carousel/carousel.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
+import { CarouselAboutComponent } from './share/components/carousel-about/carousel-about.component';
+import { InfoComponent } from './share/components/info/info.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import {CarouselModule} from "ngx-owl-carousel-o";
     MainComponent,
     HeaderComponent,
     DiamodComponent,
-    CarouselComponent
+    CarouselComponent,
+    CarouselAboutComponent,
+    InfoComponent
   ],
     imports: [
         BrowserModule,
