@@ -14,6 +14,10 @@ import { CarouselComponent } from './share/components/carousel/carousel.componen
 import {CarouselModule} from "ngx-owl-carousel-o";
 import { CarouselAboutComponent } from './share/components/carousel-about/carousel-about.component';
 import { InfoComponent } from './share/components/info/info.component';
+import { DetailsBoxComponent } from './share/components/details-box/details-box.component';
+import { MosaicComponent } from './share/components/mosaic/mosaic.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { UserFeedbackComponent } from './share/components/user-feedback/user-feedback.component';
 
 
 @NgModule({
@@ -24,17 +28,21 @@ import { InfoComponent } from './share/components/info/info.component';
     DiamodComponent,
     CarouselComponent,
     CarouselAboutComponent,
-    InfoComponent
+    InfoComponent,
+    DetailsBoxComponent,
+    MosaicComponent,
+    UserFeedbackComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatIconModule,
-        MatRippleModule,
-        CarouselModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatRippleModule,
+    CarouselModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
