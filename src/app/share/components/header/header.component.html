@@ -14,10 +14,10 @@
         <button mat-button>Gallery of works</button>
       </div>
     </div>
-    <div class="drop-down flex flex-justify-content-center flex-direction-column">
-      <div class="burger-lines"></div>
-      <div class="burger-lines"></div>
-      <div class="burger-lines"></div>
+    <div (click)="onClick()" class="drop-down flex flex-justify-content-center flex-direction-column" >
+      <div class="burger-lines" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
+      <div class="burger-lines" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
+      <div class="burger-lines" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
     </div>
   </nav>
 </header>

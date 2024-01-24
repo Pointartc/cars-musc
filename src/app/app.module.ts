@@ -19,6 +19,8 @@ import { MosaicComponent } from './share/components/mosaic/mosaic.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { UserFeedbackComponent } from './share/components/user-feedback/user-feedback.component';
 import { FooterComponent } from './share/components/footer/footer.component';
+import { BurgerComponent } from './share/components/burger/burger.component';
+import { DropdownComponent } from './share/components/dropdown/dropdown.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { FooterComponent } from './share/components/footer/footer.component';
     DetailsBoxComponent,
     MosaicComponent,
     UserFeedbackComponent,
-    FooterComponent
+    FooterComponent,
+    BurgerComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
