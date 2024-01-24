@@ -18,6 +18,7 @@ import { DetailsBoxComponent } from './share/components/details-box/details-box.
 import { MosaicComponent } from './share/components/mosaic/mosaic.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { UserFeedbackComponent } from './share/components/user-feedback/user-feedback.component';
+import { FooterComponent } from './share/components/footer/footer.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { UserFeedbackComponent } from './share/components/user-feedback/user-fee
     InfoComponent,
     DetailsBoxComponent,
     MosaicComponent,
-    UserFeedbackComponent
+    UserFeedbackComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

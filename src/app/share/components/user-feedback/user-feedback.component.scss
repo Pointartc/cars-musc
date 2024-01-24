@@ -17,6 +17,7 @@ input:hover {
 }
 
 textarea {
+  padding: 10px;
   all: unset;
   width: 526px;
   height: 150px;
@@ -29,7 +30,15 @@ textarea:hover {
 }
 
 .input-box__element {
-  margin: 10px;
+  margin: 5px;
+}
+
+.messengers__elements {
+  margin: 5px 5px 5px 5px;
+}
+
+.feedback-form {
+  margin: 0 0 100px 0;
 }
 
 img {
@@ -39,4 +48,11 @@ img {
 .link {
   border: #898989 solid 1px;
   //margin: 5px 0 0 0;
+}
+.button-feedback {
+  margin: 0;
+}
+
+.feedback-img {
+  width: 25px;
 }
