@@ -31,6 +31,10 @@ img {
   justify-content: center;
 }
 
+.flex-justify-content-evenly {
+  justify-content: space-evenly;
+}
+
 .flex-direction-column {
   flex-direction: column;
 }
@@ -116,3 +120,51 @@ body {
   max-width: 450px !important;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 50px 0 0 0;
+  margin: 0;
+  height: 200px;
+  width: 70px;
+  transition: 3s ease-in-out;
+}
+
+.menu:hover {
+
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.burger-menu {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}

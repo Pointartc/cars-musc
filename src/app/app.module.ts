@@ -21,6 +21,7 @@ import { UserFeedbackComponent } from './share/components/user-feedback/user-fee
 import { FooterComponent } from './share/components/footer/footer.component';
 import { BurgerComponent } from './share/components/burger/burger.component';
 import { DropdownComponent } from './share/components/dropdown/dropdown.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { DropdownComponent } from './share/components/dropdown/dropdown.componen
     MatIconModule,
     MatRippleModule,
     CarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
