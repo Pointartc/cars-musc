@@ -22,6 +22,9 @@ import { FooterComponent } from './share/components/footer/footer.component';
 import { BurgerComponent } from './share/components/burger/burger.component';
 import { DropdownComponent } from './share/components/dropdown/dropdown.component';
 import {MatMenuModule} from "@angular/material/menu";
+import { RegisterComponent } from './share/components/register/register.component';
+import { LoginComponent } from './share/components/login/login.component';
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -38,7 +41,9 @@ import {MatMenuModule} from "@angular/material/menu";
     UserFeedbackComponent,
     FooterComponent,
     BurgerComponent,
-    DropdownComponent
+    DropdownComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import {MatMenuModule} from "@angular/material/menu";
     MatRippleModule,
     CarouselModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
