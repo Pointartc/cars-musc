@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormControlName, FormGroup, Validators} from "@angular/forms";
+import {Router, RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', [Validators.required, Validators.minLength(2)]),
   })
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
@@ -25,6 +26,8 @@ export class LoginComponent implements OnInit {
   }
 
   Register() {
-
+    this.router.navigateByUrl('/register')
   }
+
+  protected readonly RouterLink = RouterLink;
 }
