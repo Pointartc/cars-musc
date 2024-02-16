@@ -5,9 +5,11 @@ import {MainComponent} from "./main/main.component";
 import {RegisterComponent} from "./share/components/register/register.component";
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
-  {path: 'main', component: MainComponent},
-  {path: 'register', component: RegisterComponent},
+  {path: '', loadChildren: () => import('./share/components/login/login.module').then(m => m.LoginModule)},
+  {path: 'main', loadChildren: () => import('./main/main.module').then(m => m.MainModule)},
+  {path: 'login', component: LoginComponent}
+  // {path: 'main', component: MainComponent},
+  // {path: 'register', component: RegisterComponent},
 ];
 
 @NgModule({

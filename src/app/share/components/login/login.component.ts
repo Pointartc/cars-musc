@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormControlName, FormGroup, Validators} from "@angular/forms";
-import {Router, RouterLink} from "@angular/router";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 import {AuthService} from "../../services/auth.service";
 
 @Component({
@@ -21,16 +21,23 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.loginForm.value, this.loginForm.invalid,
-      '==>', this.loginForm.getRawValue()
+    // console.log(this.loginForm.value, this.loginForm.invalid,
+    //   '==>', this.loginForm.getRawValue()
+    // )
+    let user = this.authService.login(
+        this.loginForm.value.email,
+        this.loginForm.value.password
     )
-    let user
-    this.loginForm.value.email, this.loginForm.value.password
+    if (!user) {
+      alert('inavlid post and password')
+    } else {
+      this.router.navigateByUrl('/')
+    }
   }
 
   Register() {
     this.router.navigateByUrl('/register')
   }
 
-  protected readonly RouterLink = RouterLink;
+  // protected readonly RouterLink = RouterLink;
 }

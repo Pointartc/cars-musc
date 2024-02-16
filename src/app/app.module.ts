@@ -25,6 +25,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import { RegisterComponent } from './share/components/register/register.component';
 import { LoginComponent } from './share/components/login/login.component';
 import {MatInputModule} from "@angular/material/input";
+import { PublicComponent } from './public/public.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import {MatInputModule} from "@angular/material/input";
     BurgerComponent,
     DropdownComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,

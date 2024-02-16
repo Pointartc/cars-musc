@@ -19,6 +19,7 @@ export class AuthService {
             password: '123123David'
         },
         {
+            id: 3,
             email: 'tom@Gmail.com',
             password: '123123Tom'
         }
@@ -30,7 +31,8 @@ export class AuthService {
     }
 
     login(email: string, password: string) {
-        let user = this.Users.find((u) => email === email && password === password);
+        let user = this.Users.find((u) => u.email === email && u.password === password);
+        console.log('===>', user)
         if (user) {
             this.session = user
             localStorage.setItem('session', JSON.stringify(this.session))
