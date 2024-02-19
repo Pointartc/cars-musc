@@ -22,8 +22,8 @@ import { FooterComponent } from './share/components/footer/footer.component';
 import { BurgerComponent } from './share/components/burger/burger.component';
 import { DropdownComponent } from './share/components/dropdown/dropdown.component';
 import {MatMenuModule} from "@angular/material/menu";
-import { RegisterComponent } from './share/components/register/register.component';
-import { LoginComponent } from './share/components/login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 import {MatInputModule} from "@angular/material/input";
 import { PublicComponent } from './public/public.component';
 

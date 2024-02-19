@@ -14,15 +14,6 @@
         <mat-error>incorrect @mail</mat-error>
       </mat-form-field>
       <mat-form-field>
-        <mat-icon matPrefix>person_outline</mat-icon>
-        <div class="">
-          <input matInput required placeholder="username" formControlName="username"
-                 [class.invalid]="registerForm.get('username')?.invalid &&
-                                         (registerForm.get('username')?.dirty || registerForm.get('username')?.touched)">
-        </div>
-        <mat-error>incorrect username</mat-error>
-      </mat-form-field>
-      <mat-form-field>
         <mat-icon matPrefix>lock_outline</mat-icon>
         <div class="">
           <input matInput required placeholder="password" formControlName="password"

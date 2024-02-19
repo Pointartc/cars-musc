@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {AuthService} from "../../services/auth.service";
+import {AuthService} from "../share/services/auth.service";
 
 @Component({
   selector: 'app-login',
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     if (!user) {
       alert('inavlid post and password')
     } else {
-      this.router.navigateByUrl('/')
+      this.router.navigateByUrl('/main')
     }
   }
 
